@@ -3,115 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Imran</title>
   <meta name="description" content="Muhammad Imran - Postdoctoral Researcher at Harbin Institute of Technology, Shenzhen">
+  <title>Muhammad Imran</title>
   <style>
-    body {font-family: Arial, Helvetica, sans-serif; max-width: 960px; margin: 40px auto; padding: 20px; line-height: 1.7; color: #333;}
-    h1 {border-bottom: 2px solid #ccc; padding-bottom: 10px;}
-    h2 {color: #2c3e50; margin-top: 40px;}
-    img {border-radius: 50%; width: 160px; float: left; margin: 0 30px 20px 0;}
-    a {color: #0066cc; text-decoration: none;}
-    a:hover {text-decoration: underline;}
-    ul {padding-left: 20px;}
-    li {margin-bottom: 9px;}
-    .contact {margin: 20px 0;}
-    .news li {list-style: none; position: relative; padding-left: 70px;}
-    .news li strong {position: absolute; left: 0; width: 60px;}
-    .footer {text-align: center; margin-top: 80px; color: #777; font-size: 0.9em;}
+    body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; background: #fff; color: #333;}
+    .sidebar {
+      width: 280px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #f8f8f8;
+      padding: 40px 20px;
+      text-align: center;
+      overflow-y: auto;
+      border-right: 1px solid #eee;
+      box-sizing: border-box;
+    }
+    .sidebar img {
+      border-radius: 50%;
+      width: 180px;
+      margin-bottom: 20px;
+    }
+    .sidebar h1 {
+      margin: 15px 0 10px;
+      font-size: 1.8em;
+    }
+    .sidebar p {
+      margin: 8px 0;
+      color: #555;
+      font-size: 1em;
+    }
+    .sidebar a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .nav {
+      margin: 40px 0;
+      font-size: 1.1em;
+    }
+    .nav a {
+      display: block;
+      margin: 18px 0;
+      color: #333;
+      font-weight: 500;
+    }
+    .nav a:hover {
+      color: #0066cc;
+    }
+    .main {
+      margin-left: 280px;
+      padding: 40px;
+      max-width: 900px;
+      line-height: 1.7;
+    }
+    .main h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .news li {
+      list-style: none;
+      position: relative;
+      padding-left: 70px;
+      margin-bottom: 15px;
+    }
+    .news li strong {
+      position: absolute;
+      left: 0;
+      width: 60px;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 100px;
+      color: #777;
+      font-size: 0.9em;
+      padding: 20px 0;
+      border-top: 1px solid #eee;
+    }
+    /* Mobile responsiveness */
+    @media (max-width: 900px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+      .main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <img src="https://avatars.githubusercontent.com/u/50705847" alt="Muhammad Imran">
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <img src="https://avatars.githubusercontent.com/u/50705847" alt="Muhammad Imran">
+    <h1>Muhammad Imran</h1>
+    <p>Postdoctoral Researcher<br>
+       Shenzhen Municipal Key Laboratory of AIoT Communications<br>
+       School of Information Science and Technology<br>
+       Harbin Institute of Technology, Shenzhen,<br>
+       Guangdong 518055, China</p>
 
-<nav style="margin: 20px 0; text-align: center; font-size: 1.1em;">
-  <a href="/" style="margin: 0 15px;">Home</a> |
-  <a href="/Research.html" style="margin: 0 15px;">Research</a> |
-  <a href="/Publications.html" style="margin: 0 15px;">Publications</a> |
-  <a href="/Teaching.html" style="margin: 0 15px;">Teaching</a> |
-  <a href="/Team.html" style="margin: 0 15px;">Team</a>
-</nav>
+    <p style="margin: 30px 0 20px;">
+      <strong>Email:</strong><br>
+      <a href="mailto:royimranpk@gmail.com">royimranpk@gmail.com</a><br>
+      <a href="mailto:imran@hit.edu.cn">imran@hit.edu.cn</a>
+    </p>
 
-  
-  <h1>Muhammad Imran</h1>
-  <p style="font-size:1.1em;">
-    Postdoctoral Researcher<br> Shenzhen Municipal Key Laboratory of AIoT Communications<br> School of Information Science and Technology<br>
-    Harbin Institute of Technology, Shenzhen, Guangdong 518055, China
-  </p>
+    <p>
+      <a href="https://scholar.google.com/citations?user=w4f9hUgAAAAJ&hl=en">Google Scholar</a> •
+      <a href="https://github.com/RoyMImran">GitHub</a>
+    </p>
 
-  <div class="contact">
-    Email: 
-    <a href="mailto:royimranpk@gmail.com">royimranpk@gmail.com</a> | 
-    <a href="mailto:imran@hit.edu.cn">imran@hit.edu.cn</a> •
-    <a href="https://scholar.google.com/citations?user=w4f9hUgAAAAJ&hl=en">Google Scholar</a> •
-    <a href="https://github.com/RoyMImran">GitHub</a>
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="/Research.html">Research</a>
+      <a href="/Publications.html">Publications</a>
+      <a href="/Teaching.html">Teaching</a>
+      <a href="/Team.html">Team</a>
+    </div>
   </div>
 
-  <h2>About Me</h2>
-  <p>
-    Muhammad Imran is a Postdoctoral Fellow at Shenzhen Municipal Key Laboratory of AIoT Communications, Harbin Institute of Technology, Shenzhen. 
-    He received his Ph.D. in Software and Communication Engineering from Hongik University, South Korea (2021–2024), 
-    M.S. in Computer Science from Virtual University of Pakistan (2019), and B.S./MCS in Computer Science from COMSATS University and BZU, Pakistan.
-  </p>
-  <p>
-    Before his doctoral studies, he served as an Educator with the School Education Department (SED) Punjab, Pakistan (2016–2021). 
-    His research interests include IoT, edge/cloud computing, Information-Centric Networking (ICN/NDN), 5G/6G communication, AI-centric intelligent networking, 
-    reinforcement learning, and resource allocation. 
-    He received the <strong>Best Researcher Award</strong> for 2024–2025 and 2022–2023.
-  </p>
+  <!-- Main Content -->
+  <div class="main">
+    <h2>About Me</h2>
+    <p>
+      Muhammad Imran is a Postdoctoral Fellow at Shenzhen Municipal Key Laboratory of AIoT Communications, Harbin Institute of Technology, Shenzhen.
+      He received his Ph.D. in Software and Communication Engineering from Hongik University, South Korea (2021–2024),
+      M.S. in Computer Science from Virtual University of Pakistan (2019), and B.S./MCS in Computer Science from COMSATS University and BZU, Pakistan.
+    </p>
+    <p>
+      Before his doctoral studies, he served as an Educator with the School Education Department (SED) Punjab, Pakistan (2016–2021).
+      His research interests include IoT, edge/cloud computing, Information-Centric Networking (ICN/NDN), 5G/6G communication, AI-centric intelligent networking,
+      reinforcement learning, and resource allocation.
+      He received the <strong>Best Researcher Award</strong> for 2024–2025 and 2022–2023.
+    </p>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Ph.D., Software &amp; Communication Engineering, <strong>Hongik University</strong>, South Korea [2021 – 2024]</li>
-    <li>M.S., Computer Science (Computer Networks), <strong>Virtual University of Pakistan</strong> [2019]</li>
-    <li>MCS, Computer Science, <strong>COMSATS University Islamabad – Sahiwal Campus</strong> [2015]</li>
-    <li>B.Sc., Computer Science &amp; Economics, <strong>Bahauddin Zakariya University (BZU)</strong> [2013]</li>
-  </ul>
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D., Software &amp; Communication Engineering, <strong>Hongik University</strong>, South Korea [2021 – 2024]</li>
+      <li>M.S., Computer Science (Computer Networks), <strong>Virtual University of Pakistan</strong> [2019]</li>
+      <li>MCS, Computer Science, <strong>COMSATS University Islamabad – Sahiwal Campus</strong> [2015]</li>
+      <li>B.Sc., Computer Science &amp; Economics, <strong>Bahauddin Zakariya University (BZU)</strong> [2013]</li>
+    </ul>
 
-  <h2>Experience</h2>
-  <ul>
-    <li>Postdoctoral Researcher <strong>Harbin Institute of Technology, Shenzhen</strong> [Jun 2025 – Present]</li>
-    <li>Postdoctoral Fellow <strong>Hongik University</strong>, South Korea [Mar 2025 – May 2025]</li>
-    <li>Teaching Assistant <strong>Hongik University</strong>, South Korea [Mar 2021 – Present]</li>
-    <li>Educator School Education Department (SED) Punjab, Pakistan [Jul 2016 – Apr 2021]</li>
-    <li>Unity Development Intern Lahore, Pakistan [Nov 2015 – Mar 2016]</li>
-  </ul>
+    <h2>Experience</h2>
+    <ul>
+      <li>Postdoctoral Researcher <strong>Harbin Institute of Technology, Shenzhen</strong> [Jun 2025 – Present]</li>
+      <li>Postdoctoral Fellow <strong>Hongik University</strong>, South Korea [Mar 2025 – May 2025]</li>
+      <li>Teaching Assistant <strong>Hongik University</strong>, South Korea [Mar 2021 – Present]</li>
+      <li>Educator School Education Department (SED) Punjab, Pakistan [Jul 2016 – Apr 2021]</li>
+      <li>Unity Development Intern Lahore, Pakistan [Nov 2015 – Mar 2016]</li>
+    </ul>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Computer Networks, 5G/6G Communication &amp; Protocol Design</li>
-    <li>Information-Centric Networking (ICN/NDN) &amp; In-Network Computing</li>
-    <li>AI/ML-centric Intelligent Networking &amp; Reinforcement Learning</li>
-    <li>Edge/Cloud Computing, Resource Allocation &amp; Scheduling</li>
-    <li>Internet of Things (IoT), Software-Defined Networks, Autonomous Vehicular Networks</li>
-  </ul>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Computer Networks, 5G/6G Communication &amp; Protocol Design</li>
+      <li>Information-Centric Networking (ICN/NDN) &amp; In-Network Computing</li>
+      <li>AI/ML-centric Intelligent Networking &amp; Reinforcement Learning</li>
+      <li>Edge/Cloud Computing, Resource Allocation &amp; Scheduling</li>
+      <li>Internet of Things (IoT), Software-Defined Networks, Autonomous Vehicular Networks</li>
+    </ul>
 
-  <h2>News</h2>
-  <ul class="news">
-    <li><strong>2025.12</strong> Invited talk at <strong>ICCI 2025</strong> – “Future Networks: Leveraging Information-Centric Architectures for Efficient In-Network Computing”</li>
-    <li><strong>2025.10</strong> Paper “Dependency-aware microservices offloading in ICN-based edge computing testbed” accepted in <strong>Journal of Systems Architecture</strong></li>
-    <li><strong>2025.06</strong> Joined Harbin Institute of Technology, Shenzhen as Postdoctoral Researcher</li>
-    <li><strong>2025.01</strong> Presented at 13th ICGHIT, Nha Trang, Vietnam</li>
-    <li><strong>2024.12</strong> Paper accepted at ACM/IEEE Symposium on Edge Computing (SEC 2024), Rome, Italy</li>
-  </ul>
+    <h2>News</h2>
+    <ul class="news">
+      <li><strong>2025.12</strong> Invited talk at <strong>ICCI 2025</strong> – “Future Networks: Leveraging Information-Centric Architectures for Efficient In-Network Computing”</li>
+      <li><strong>2025.10</strong> Paper “Dependency-aware microservices offloading in ICN-based edge computing testbed” accepted in <strong>Journal of Systems Architecture</strong></li>
+      <li><strong>2025.06</strong> Joined Harbin Institute of Technology, Shenzhen as Postdoctoral Researcher</li>
+      <li><strong>2025.01</strong> Presented at 13th ICGHIT, Nha Trang, Vietnam</li>
+      <li><strong>2024.12</strong> Paper accepted at ACM/IEEE Symposium on Edge Computing (SEC 2024), Rome, Italy</li>
+    </ul>
 
-  <h2>Selected Publications</h2>
-  <p><em>(Full list on <a href="https://scholar.google.com/citations?user=w4f9hUgAAAAJ&hl=en">Google Scholar</a>)</em></p>
-  <ul>
-    <li><strong>2024</strong> Ensemble and Gossip Learning-Based Framework for Intrusion Detection System in V2X Environment<br>
-        <strong>M. Imran</strong> et al., <em>Sensors</em>, vol. 24, no. 20, Oct 2024.</li>
-    <li><strong>2024</strong> An Efficient Communication and Computation Resources Sharing in Information-Centric 6G Networks<br>
-        <strong>M. Imran</strong> et al., <em>IEEE Access</em>, vol. 11, Aug 2024.</li>
-    <li><strong>2024</strong> Evaluating the impact of microservice-centric computations in the internet of vehicles<br>
-        MSU Din, <strong>M. Imran</strong> et al., <em>Journal of Systems Architecture</em>, vol. 150, Mar 2024.</li>
-    <li><strong>2023</strong> MIA-NDN: Microservice-Centric Interest Aggregation in Named Data Networking<br>
-        <strong>M. Imran</strong> et al., <em>MDPI Sensors</em>, vol. 23, no. 3, Jan 2023.</li>
-    <li><strong>2022</strong> Live virtual machine migration: A survey, research challenges, and future directions<br>
-        <strong>M. Imran</strong> et al., <em>Computers & Electrical Engineering</em>, vol. 103, Aug 2022.</li>
-  </ul>
+    <h2>Selected Publications</h2>
+    <p><em>(Full list on <a href="https://scholar.google.com/citations?user=w4f9hUgAAAAJ&hl=en">Google Scholar</a>)</em></p>
+    <ul>
+      <li><strong>2024</strong> Ensemble and Gossip Learning-Based Framework for Intrusion Detection System in V2X Environment<br>
+          <strong>M. Imran</strong> et al., <em>Sensors</em>, vol. 24, no. 20, Oct 2024.</li>
+      <li><strong>2024</strong> An Efficient Communication and Computation Resources Sharing in Information-Centric 6G Networks<br>
+          <strong>M. Imran</strong> et al., <em>IEEE Access</em>, vol. 11, Aug 2024.</li>
+      <li><strong>2024</strong> Evaluating the impact of microservice-centric computations in the internet of vehicles<br>
+          MSU Din, <strong>M. Imran</strong> et al., <em>Journal of Systems Architecture</em>, vol. 150, Mar 2024.</li>
+      <li><strong>2023</strong> MIA-NDN: Microservice-Centric Interest Aggregation in Named Data Networking<br>
+          <strong>M. Imran</strong> et al., <em>MDPI Sensors</em>, vol. 23, no. 3, Jan 2023.</li>
+      <li><strong>2022</strong> Live virtual machine migration: A survey, research challenges, and future directions<br>
+          <strong>M. Imran</strong> et al., <em>Computers & Electrical Engineering</em>, vol. 103, Aug 2022.</li>
+    </ul>
 
-  <div class="footer">
-    Last updated: December 2025 | © Muhammad Imran
+    <div class="footer">
+      Last updated: December 2025 | © Muhammad Imran
+    </div>
   </div>
 
 </body>
