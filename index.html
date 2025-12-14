@@ -8,58 +8,58 @@
   <style>
     body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; display: flex; min-height: 100vh; background: #fff; color: #333;}
     .sidebar {
-      width: 280px;
+      width: 300px;
       position: fixed;
       top: 0;
       left: 0;
       height: 100%;
-      background: #fff; /* Fully transparent/white like main page */
-      padding: 30px 20px;
+      background: #f8f8f8;
+      padding: 40px 30px;
       text-align: center;
-      border-right: 1px solid #eee; /* Very subtle divider only */
+      overflow-y: auto;
+      border-right: 1px solid #ddd; /* Subtle divider */
       box-sizing: border-box;
     }
     .sidebar .title {
-      font-size: 1.3em;
-      margin-bottom: 20px;
+      font-size: 1.4em;
+      margin-bottom: 30px;
       color: #333;
     }
     .sidebar img {
       border-radius: 50%;
-      width: 160px; /* Reduced for better fit */
-      margin-bottom: 15px;
+      width: 180px;
+      margin-bottom: 20px;
     }
     .sidebar h1 {
-      margin: 8px 0;
-      font-size: 1.6em; /* Slightly smaller */
+      margin: 10px 0;
+      font-size: 1.8em;
     }
     .sidebar .affiliation {
-      font-size: 0.95em; /* Tighter text */
+      font-size: 1.05em;
       color: #555;
-      margin: 12px 0;
-      line-height: 1.4;
+      margin: 15px 0;
     }
     .sidebar .links {
-      margin: 20px 0 25px;
-      font-size: 0.95em;
+      margin: 30px 0;
     }
     .sidebar .links a {
       display: block;
-      margin: 8px 0;
+      margin: 12px 0;
       color: #0066cc;
       text-decoration: none;
+      font-size: 1.05em;
     }
     .sidebar .links a:hover {
       text-decoration: underline;
     }
     .nav {
-      margin-top: 20px;
+      margin-top: 40px;
     }
     .nav a {
       display: block;
-      margin: 14px 0;
+      margin: 18px 0;
       color: #333;
-      font-size: 1.05em;
+      font-size: 1.1em;
       font-weight: 500;
       text-decoration: none;
     }
@@ -67,8 +67,8 @@
       color: #0066cc;
     }
     .main {
-      margin-left: 280px;
-      padding: 40px;
+      margin-left: 300px;
+      padding: 50px 40px;
       max-width: 900px;
       line-height: 1.7;
     }
@@ -116,7 +116,7 @@
         height: auto;
         padding: 20px;
         border-right: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd;
       }
       .main {
         margin-left: 0;
@@ -127,7 +127,7 @@
 </head>
 <body>
 
-  <!-- Fixed Left Sidebar (no scrollbar) -->
+  <!-- Fixed Left Sidebar -->
   <div class="sidebar">
     <div class="title">Muhammad Imran’s Homepage</div>
     
@@ -160,9 +160,8 @@
     </div>
   </div>
 
-  <!-- Scrollable Main Content -->
+  <!-- Scrollable Main Content (right side) -->
   <div class="main">
-    <!-- All your existing sections: About Me, Education, etc. (same as before) -->
     <h2>About Me</h2>
     <p>
       Muhammad Imran is a Postdoctoral Fellow at Shenzhen Municipal Key Laboratory of AIoT Communications, Harbin Institute of Technology, Shenzhen.
@@ -176,7 +175,55 @@
       He received the <strong>Best Researcher Award</strong> for 2024–2025 and 2022–2023.
     </p>
 
-    <!-- Rest of your content (Education, Experience, Research Interests, News, Selected Publications) remains exactly the same -->
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D., Software &amp; Communication Engineering, <strong>Hongik University</strong>, South Korea [2021 – 2024]</li>
+      <li>M.S., Computer Science (Computer Networks), <strong>Virtual University of Pakistan</strong> [2019]</li>
+      <li>MCS, Computer Science, <strong>COMSATS University Islamabad – Sahiwal Campus</strong> [2015]</li>
+      <li>B.Sc., Computer Science &amp; Economics, <strong>Bahauddin Zakariya University (BZU)</strong> [2013]</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <ul>
+      <li>Postdoctoral Researcher <strong>Harbin Institute of Technology, Shenzhen</strong> [Jun 2025 – Present]</li>
+      <li>Postdoctoral Fellow <strong>Hongik University</strong>, South Korea [Mar 2025 – May 2025]</li>
+      <li>Teaching Assistant <strong>Hongik University</strong>, South Korea [Mar 2021 – Present]</li>
+      <li>Educator School Education Department (SED) Punjab, Pakistan [Jul 2016 – Apr 2021]</li>
+      <li>Unity Development Intern Lahore, Pakistan [Nov 2015 – Mar 2016]</li>
+    </ul>
+
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Computer Networks, 5G/6G Communication &amp; Protocol Design</li>
+      <li>Information-Centric Networking (ICN/NDN) &amp; In-Network Computing</li>
+      <li>AI/ML-centric Intelligent Networking &amp; Reinforcement Learning</li>
+      <li>Edge/Cloud Computing, Resource Allocation &amp; Scheduling</li>
+      <li>Internet of Things (IoT), Software-Defined Networks, Autonomous Vehicular Networks</li>
+    </ul>
+
+    <h2>News</h2>
+    <ul class="news">
+      <li><strong>2025.12</strong> Invited talk at <strong>ICCI 2025</strong> – “Future Networks: Leveraging Information-Centric Architectures for Efficient In-Network Computing”</li>
+      <li><strong>2025.10</strong> Paper “Dependency-aware microservices offloading in ICN-based edge computing testbed” accepted in <strong>Journal of Systems Architecture</strong></li>
+      <li><strong>2025.06</strong> Joined Harbin Institute of Technology, Shenzhen as Postdoctoral Researcher</li>
+      <li><strong>2025.01</strong> Presented at 13th ICGHIT, Nha Trang, Vietnam</li>
+      <li><strong>2024.12</strong> Paper accepted at ACM/IEEE Symposium on Edge Computing (SEC 2024), Rome, Italy</li>
+    </ul>
+
+    <h2>Selected Publications</h2>
+    <p><em>(Full list on <a href="https://scholar.google.com/citations?user=w4f9hUgAAAAJ&hl=en">Google Scholar</a>)</em></p>
+    <ul>
+      <li><strong>2024</strong> Ensemble and Gossip Learning-Based Framework for Intrusion Detection System in V2X Environment<br>
+          <strong>M. Imran</strong> et al., <em>Sensors</em>, vol. 24, no. 20, Oct 2024.</li>
+      <li><strong>2024</strong> An Efficient Communication and Computation Resources Sharing in Information-Centric 6G Networks<br>
+          <strong>M. Imran</strong> et al., <em>IEEE Access</em>, vol. 11, Aug 2024.</li>
+      <li><strong>2024</strong> Evaluating the impact of microservice-centric computations in the internet of vehicles<br>
+          MSU Din, <strong>M. Imran</strong> et al., <em>Journal of Systems Architecture</em>, vol. 150, Mar 2024.</li>
+      <li><strong>2023</strong> MIA-NDN: Microservice-Centric Interest Aggregation in Named Data Networking<br>
+          <strong>M. Imran</strong> et al., <em>MDPI Sensors</em>, vol. 23, no. 3, Jan 2023.</li>
+      <li><strong>2022</strong> Live virtual machine migration: A survey, research challenges, and future directions<br>
+          <strong>M. Imran</strong> et al., <em>Computers & Electrical Engineering</em>, vol. 103, Aug 2022.</li>
+    </ul>
 
     <div class="footer">
       Last updated: December 2025 | © Muhammad Imran
